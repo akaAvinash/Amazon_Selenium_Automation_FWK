@@ -34,3 +34,6 @@ jobs:
       with:
         name: Test Report
         path: Amazon/Reports/report.html
+
+    - name: List all test files
+      run: find . -name "test_*.py"
