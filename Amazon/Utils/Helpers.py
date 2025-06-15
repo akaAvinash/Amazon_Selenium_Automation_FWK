@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 class Helper:
     def __init__(self):
         self.driver = None
-        self.target_url = "https://www.amazon.in"  # Or whatever your default URL is
+        self.target_url = "https://www.amazon.in"
 
     def get_driver(self):
         chrome_options = Options()
