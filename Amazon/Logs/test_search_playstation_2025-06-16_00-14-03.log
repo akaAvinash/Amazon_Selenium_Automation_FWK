@@ -1,0 +1,6 @@
+2025-06-16 00:14:03 - test_search_playstation - INFO - ======================= START: test_search_playstation =============================
+2025-06-16 00:14:22 - test_search_playstation - INFO - Launching Amazon Homepage
+2025-06-16 00:14:22 - test_search_playstation - INFO - Entering search term: Playstation 5
+2025-06-16 00:14:23 - test_search_playstation - INFO - Search box input verified successfully.
+2025-06-16 00:14:23 - test_search_playstation - INFO - ========== END: test_search ==========
+

@@ -1,0 +1,34 @@
+2025-06-16 00:14:03 - test_search_iPhone - INFO - ========== START: test_search_iPhone ==========
+2025-06-16 00:14:06 - test_search_iPhone - INFO - Launching Amazon homepage...
+2025-06-16 00:14:06 - test_search_iPhone - INFO - Waiting for search box (ID: twotabsearchtextbox) to be visible
+2025-06-16 00:14:06 - test_search_iPhone - INFO - Typing search term: 'iPhone 16'
+2025-06-16 00:14:07 - test_search_iPhone - DEBUG - Entered value in search box: 'iPhone 16'
+2025-06-16 00:14:07 - test_search_iPhone - INFO - Search input verified.
+2025-06-16 00:14:07 - test_search_iPhone - INFO - Clicking search button...
+2025-06-16 00:14:08 - test_search_iPhone - INFO - Waiting for Apple logo to appear on the results page...
+2025-06-16 00:14:18 - test_search_iPhone - ERROR - Unexpected error occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7362dfea5+79173]
+	GetHandleVerifier [0x0x7ff7362dff00+79264]
+	(No symbol) [0x0x7ff736099e5a]
+	(No symbol) [0x0x7ff7360f0586]
+	(No symbol) [0x0x7ff7360f083c]
+	(No symbol) [0x0x7ff736144247]
+	(No symbol) [0x0x7ff7361189af]
+	(No symbol) [0x0x7ff73614100d]
+	(No symbol) [0x0x7ff736118743]
+	(No symbol) [0x0x7ff7360e14c1]
+	(No symbol) [0x0x7ff7360e2253]
+	GetHandleVerifier [0x0x7ff7365aa2dd+3004797]
+	GetHandleVerifier [0x0x7ff7365a472d+2981325]
+	GetHandleVerifier [0x0x7ff7365c3380+3107360]
+	GetHandleVerifier [0x0x7ff7362faa2e+188622]
+	GetHandleVerifier [0x0x7ff7363022bf+219487]
+	GetHandleVerifier [0x0x7ff7362e8df4+115860]
+	GetHandleVerifier [0x0x7ff7362e8fa9+116297]
+	GetHandleVerifier [0x0x7ff7362cf558+11256]
+	BaseThreadInitThunk [0x0x7ffb2fd3e8d7+23]
+	RtlUserThreadStart [0x0x7ffb30e5c34c+44]
+
+2025-06-16 00:14:18 - test_search_iPhone - INFO - ========== END: test_search ==========
+

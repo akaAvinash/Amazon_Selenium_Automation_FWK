@@ -1,0 +1,11 @@
+2025-06-16 00:17:28 - test_search_iPhone - INFO - ========== START: test_search_iPhone ==========
+2025-06-16 00:17:30 - test_search_iPhone - INFO - Launching Amazon homepage...
+2025-06-16 00:17:30 - test_search_iPhone - INFO - Waiting for search box (ID: twotabsearchtextbox) to be visible
+2025-06-16 00:17:30 - test_search_iPhone - INFO - Typing search term: 'iPhone 16'
+2025-06-16 00:17:30 - test_search_iPhone - DEBUG - Entered value in search box: 'iPhone 16'
+2025-06-16 00:17:30 - test_search_iPhone - INFO - Search input verified.
+2025-06-16 00:17:30 - test_search_iPhone - INFO - Clicking search button...
+2025-06-16 00:17:32 - test_search_iPhone - INFO - Waiting for Apple logo to appear on the results page...
+2025-06-16 00:17:32 - test_search_iPhone - INFO - Apple logo is visible. Search results loaded successfully.
+2025-06-16 00:17:32 - test_search_iPhone - INFO - ========== END: test_search ==========
+
