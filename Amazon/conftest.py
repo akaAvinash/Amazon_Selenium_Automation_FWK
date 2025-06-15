@@ -80,7 +80,6 @@
 import os
 import pytest
 from datetime import datetime
-from py.xml import html
 
 # Global to access pytest-html plugin
 pytest_html = None
@@ -102,29 +101,23 @@ def pytest_configure(config):
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
-    result = outcome.get_result()
+    report = outcome.get_result()
 
-    if result.when == "call":
-        driver = getattr(item, "driver", None)  # ✅ Should match request.node.driver
+    if report.when == "call" or report.when == "setup":
+        driver = getattr(item, 'driver', None)
+        if driver and (report.failed or report.passed):
+            screenshot_dir = os.path.join(os.path.dirname(__file__), "Screenshots")
+            os.makedirs(screenshot_dir, exist_ok=True)
+            file_name = f"{item.name}_{report.when}.png"
+            file_path = os.path.join(screenshot_dir, file_name)
 
-        if driver:
-            screenshots_dir = os.path.join(os.path.dirname(__file__), 'Screenshots')
-            os.makedirs(screenshots_dir, exist_ok=True)
+            driver.save_screenshot(file_path)
 
-            timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-            status = result.outcome
-            file_name = f"{item.name}_{status}_{timestamp}.png"
-            file_path = os.path.join(screenshots_dir, file_name)
+            if hasattr(report, "extra"):
+                extra = report.extra
+            else:
+                extra = report.extra = []
 
-            try:
-                driver.save_screenshot(file_path)
-
-                # Embed into HTML report
-                if pytest_html and os.path.exists(file_path):
-                    rel_path = os.path.relpath(file_path, start=os.path.dirname(item.config.option.htmlpath))
-                    extra = getattr(result, 'extra', [])
-                    extra.append(pytest_html.extras.image(rel_path))
-                    result.extra = extra
-
-            except Exception as e:
-                print(f"[ERROR] Could not capture screenshot: {e}")
+            # Relative path for report
+            rel_path = os.path.relpath(file_path, start=os.path.dirname(item.config.option.htmlpath))
+            extra.append(pytest_html.extras.image(rel_path))
