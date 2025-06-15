@@ -1,0 +1,3 @@
+2025-06-14 23:34:11 - test_search - INFO - Logger initialized
+2025-06-14 23:34:13 - test_search - INFO - Assertion Passed. Search text input is correct.
+2025-06-14 23:34:14 - test_search - INFO - Apple logo found — page loaded successfully.

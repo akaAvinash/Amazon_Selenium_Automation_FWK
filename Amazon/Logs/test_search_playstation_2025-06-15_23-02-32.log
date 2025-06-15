@@ -1,0 +1,8 @@
+2025-06-15 23:02:32 - test_search_playstation - INFO - ======================= START: test_search_playstation =============================
+2025-06-15 23:02:35 - test_search_playstation - INFO - Launching Amazon Homepage
+2025-06-15 23:02:35 - test_search_playstation - INFO - Entering search term: Playstation 5
+2025-06-15 23:02:35 - test_search_playstation - ERROR -  Assertion failed: Entered text is not same as displayed text. Got: None
+assert None == 'Playstation 5'
+ +  where 'Playstation 5' = <Amazon.Utils.Constants.Amazon object at 0x0000025945F40050>.PLAY_STATION_5
+2025-06-15 23:02:35 - test_search_playstation - INFO - ========== END: test_search ==========
+
