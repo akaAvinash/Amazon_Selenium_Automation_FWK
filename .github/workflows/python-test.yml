@@ -12,24 +12,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    - name: 🧾 Checkout repository
+      uses: actions/checkout@v4
 
-    - name: Set up Python
+    - name: 🐍 Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: 3.10
+        python-version: '3.12'  # Use latest stable version supported on GitHub runners
 
-    - name: Install dependencies
+    - name: 📦 Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run Tests
+    - name: 🧪 Run Pytest and generate HTML report
       run: |
         pytest Amazon/Tests --html=Amazon/Reports/report.html --self-contained-html
 
-    - name: Upload HTML Report
+    - name: 📤 Upload HTML Test Report
       uses: actions/upload-artifact@v4
       with:
         name: Test Report
