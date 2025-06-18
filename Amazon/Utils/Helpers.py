@@ -29,5 +29,5 @@ class Helper:
     def wait_and_find_element(self,locator,condition=EC.visibility_of_element_located,timeout=10):
         return WebDriverWait(self.driver,timeout).until(condition(locator))
 
-    def wait_and_find_elements(self,locator,condition=EC.presence_of_all_elements_located(),timeout=10):
+    def wait_and_find_elements(self,locator,condition=EC.presence_of_all_elements_located,timeout=10):
         return WebDriverWait(self.driver,timeout).until(condition(locator))
