@@ -1,0 +1,4 @@
+2025-06-18 23:48:00 - test_change_market_place - INFO - ======================= START: test_change_market_place =============================
+2025-06-18 23:48:03 - test_change_market_place - INFO - Clicking on market place options..
+2025-06-18 23:48:25 - test_change_market_place - ERROR - Unexpected error occurred: Message: 
+

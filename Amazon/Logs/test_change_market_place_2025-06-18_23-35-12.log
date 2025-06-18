@@ -1,0 +1,31 @@
+2025-06-18 23:35:12 - test_change_market_place - INFO - ======================= START: test_change_market_place =============================
+2025-06-18 23:35:14 - test_change_market_place - INFO - Clicking on market place options..
+2025-06-18 23:35:14 - test_change_market_place - ERROR - Unexpected error occurred: Message: invalid selector: Unable to locate an element with the xpath expression //button[@aria-label='Expand to Change Language or Country' because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//button[@aria-label='Expand to Change Language or Country'' is not a valid XPath expression.
+  (Session info: chrome=137.0.7151.119); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff70f9efea5+79173]
+	GetHandleVerifier [0x0x7ff70f9eff00+79264]
+	(No symbol) [0x0x7ff70f7a9e5a]
+	(No symbol) [0x0x7ff70f7b184d]
+	(No symbol) [0x0x7ff70f7b489c]
+	(No symbol) [0x0x7ff70f7b496f]
+	(No symbol) [0x0x7ff70f7ffe37]
+	(No symbol) [0x0x7ff70f80083c]
+	(No symbol) [0x0x7ff70f854247]
+	(No symbol) [0x0x7ff70f8289af]
+	(No symbol) [0x0x7ff70f85100d]
+	(No symbol) [0x0x7ff70f828743]
+	(No symbol) [0x0x7ff70f7f14c1]
+	(No symbol) [0x0x7ff70f7f2253]
+	GetHandleVerifier [0x0x7ff70fcba2dd+3004797]
+	GetHandleVerifier [0x0x7ff70fcb472d+2981325]
+	GetHandleVerifier [0x0x7ff70fcd3380+3107360]
+	GetHandleVerifier [0x0x7ff70fa0aa2e+188622]
+	GetHandleVerifier [0x0x7ff70fa122bf+219487]
+	GetHandleVerifier [0x0x7ff70f9f8df4+115860]
+	GetHandleVerifier [0x0x7ff70f9f8fa9+116297]
+	GetHandleVerifier [0x0x7ff70f9df558+11256]
+	BaseThreadInitThunk [0x0x7ff9b22ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9b3ebc34c+44]
+
